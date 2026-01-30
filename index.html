@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Portfolio | Systems Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Boxicons CDN -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="./src/style.css" />
+  <script src='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js'></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">PORTFOLIO</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#domains">Domains</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#learnings">Learnings</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle Theme">
+        <!-- Sun Icon -->
+        <i class='bx bx-sun icon sun-icon'></i>
+        <!-- Moon Icon -->
+        <i class='bx bx-moon icon moon-icon' style="display:none;"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-background" id="hero-particles"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1 class="hero-headline">Hello, It's YESHWANT.G.N
+            Triple Degree Engineer</h1>
+          <h2 class="hero-subheadline">VLSI <span class="divider">|</span> AI / ML <span class="divider">|</span> Data
+            Science</h2>
+          <p class="hero-value-prop">
+            Exploring hardware, algorithms, and data to create next-gen intelligent systems.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hexagon-wrapper">
+            <div class="hexagon-image">
+              <!-- Placeholder image - Replace source with your actual image -->
+              <img src="assets\photos\photo.jpeg" alt="Profile" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p style="font-size: 1rem;margin-bottom: 1.2rem;">
+              My academic and technical journey began with a deep curiosity about how computation occurs at the physical
+              level,
+              which led me to explore <strong style="color:#60a5fa;">VLSI design</strong>. As modern systems evolved
+              toward
+              intelligence and autonomy, I recognized that hardware alone is only part of the equation. To develop a
+              complete
+              understanding of contemporary computing systems, I expanded my focus to
+              <strong style="color:#a78bfa;">Artificial Intelligence with Machine Learning</strong> and
+              <strong style="color:#34d399;">Data Science</strong>, enabling me to work across the entire stack—from the
+              transistor to the training loop.
+            </p>
+
+            <p style="font-size: 1rem;margin-bottom: 0;">
+              I approach engineering as a <strong style="color:#fbbf24;font-size: medium;">systems thinker</strong>.
+              Rather than treating software and hardware as isolated layers, I design solutions that account for
+              hardware constraints, algorithmic efficiency, and data integrity simultaneously. I am driven by complex,
+              multidisciplinary problems that demand a holistic and structured view of technology.
+            </p>
+          </div>
+
+        </div>
+    </section>
+
+    <!-- Domains -->
+    <section id="domains" class="section">
+      <div class="container">
+        <h2 class="section-title">Core Domains</h2>
+        <div class="domains-grid">
+          <!-- VLSI Card -->
+          <div class="domain-card">
+            <div class="domain-icon"><i class='bx bx-microchip'></i></div>
+            <h3>VLSI</h3>
+            <p>Designing efficient digital and analog systems. Optimizing for power, performance,memory and area (PPA).
+            </p>
+            <ul class="domain-focus">
+              <li>Digital/Analog Design</li>
+              <li>RTL, Timing, Verification</li>
+            </ul>
+          </div>
+          <!-- AI/ML Card -->
+          <div class="domain-card">
+            <div class="domain-icon"><i class='bx bx-brain'></i></div>
+            <h3>AI / ML</h3>
+            <p>Developing intelligent models that solve real-world problems with high accuracy and efficiency.</p>
+            <ul class="domain-focus">
+              <li>Deep Layers & Models</li>
+              <li>Evaluation & Optimization</li>
+              <li>Algorithms Neural Networking</li>
+            </ul>
+          </div>
+          <!-- Data Science Card -->
+          <div class="domain-card">
+            <div class="domain-icon"><i class='bx bx-bar-chart-alt-2'></i></div>
+            <h3>Data Science</h3>
+            <p>Extracting actionable insights from raw data through rigorous analysis and visualization.</p>
+            <ul class="domain-focus">
+              <li>Analysis & Visualization</li>
+              <li>Statistical Reasoning</li>
+              <li>data MANIPULATION & Preprocessing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="vlsi">VLSI</button>
+          <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+          <button class="filter-btn" data-filter="data">Data Science</button>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 1 (VLSI) -->
+          <div class="project-card" data-category="vlsi">
+            <div class="project-image-container">
+              <div class="project-image placeholder-vlsi"></div>
+              <div class="project-overlay">
+                <a href="#" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Low-Power RISC-V Processor</h3>
+                <div class="project-links">
+                  <a href="#" class="github-icon" aria-label="GitHub Repo">
+                    <i class='bx bxl-github' style="font-size: 1.5rem;"></i>
+                  </a>
+                </div>
+              </div>
+              <span class="project-tag">VLSI</span>
+              <p class="project-problem"><strong>Problem:</strong> Standard cores consume excessive power in IoT edge
+                implementations.</p>
+              <p class="project-desc">Designed a custom 32-bit RISC-V core with clock gating and operand isolation to
+                reduce dynamic power consumption by 25%.</p>
+              <div class="project-tech">
+                <span>Verilog</span> <span>SystemVerilog</span> <span>Synopsys DC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 (AI/ML) -->
+          <div class="project-card" data-category="ai-ml">
+            <div class="project-image-container">
+              <div class="project-image placeholder-ai"></div>
+              <div class="project-overlay">
+                <a href="#" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Edge-Deployment Neural Net</h3>
+                <div class="project-links">
+                  <a href="#" class="github-icon" aria-label="GitHub Repo">
+                    <i class='bx bxl-github' style="font-size: 1.5rem;"></i>
+                  </a>
+                </div>
+              </div>
+              <span class="project-tag">AI / ML</span>
+              <p class="project-problem"><strong>Problem:</strong> Large models are too slow for real-time inference on
+                embedded devices.</p>
+              <p class="project-desc">Quantized a ResNet-50 model to INT8, achieving 4x inference speedup with <1%
+                  accuracy loss on ARM Cortex-M.</p>
+                  <div class="project-tech">
+                    <span>Python</span> <span>PyTorch</span> <span>TensorRT</span>
+                  </div>
+            </div>
+          </div>
+
+          <!-- Project 3 (Data) -->
+          <div class="project-card" data-category="data">
+            <div class="project-image-container">
+              <div class="project-image placeholder-data"></div>
+              <div class="project-overlay">
+                <a href="#" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Semiconductor Yield Analytics</h3>
+                <div class="project-links">
+                  <a href="#" class="github-icon" aria-label="GitHub Repo">
+                    <i class='bx bxl-github' style="font-size: 1.5rem;"></i>
+                  </a>
+                </div>
+              </div>
+              <span class="project-tag">Data Science</span>
+              <p class="project-problem"><strong>Problem:</strong> Identifying root causes of yield drop in wafer
+                fabrication is time-consuming.</p>
+              <p class="project-desc">Built an automated pipeline utilizing PCA and clustering to identify defect
+                patterns, reducing analysis time by 60%.</p>
+              <div class="project-tech">
+                <span>Python</span> <span>Pandas</span> <span>Scikit-learn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills & Competencies</h2>
+        <div class="skills-grid">
+          <!-- Hardware & VLSI -->
+          <div class="skill-category">
+            <h3>Hardware & VLSI</h3>
+            <ul class="skill-list">
+              <li><i class='bx bx-chip'></i> Digital Design & Modeling <span class="skill-context">Applied in RISC-V
+                  Core</span></li>
+              <li><i class='bx bx-pulse'></i> MATLAB Simulation <span class="skill-context">Signal Analysis</span></li>
+              <li><i class='bx bx-circuit'></i> EasyEDA / Schematic <span class="skill-context">PCB Prototyping</span>
+              </li>
+              <li><i class='bx bx-cube'></i> AutoCAD / Fusion 360 <span class="skill-context">Device Enclosures</span>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- AI / ML -->
+          <div class="skill-category">
+            <h3>AI / ML</h3>
+            <ul class="skill-list">
+              <li><i class='bx bx-brain'></i> Supervised/Unsupervised Learning <span class="skill-context">Model
+                  Fundamentals</span></li>
+              <li><i class='bx bx-code-block'></i> Python Model Dev <span class="skill-context">PyTorch /
+                  TensorFlow</span></li>
+              <li><i class='bx bx-data'></i> Feature Engineering <span class="skill-context">Data Prep</span></li>
+              <li><i class='bx bx-slider-alt'></i> Model Optimization <span class="skill-context">Quantization /
+                  Pruning</span></li>
+            </ul>
+          </div>
+
+          <!-- Data Science -->
+          <div class="skill-category">
+            <h3>Data Science</h3>
+            <ul class="skill-list">
+              <li><i class='bx bx-filter'></i> Data Cleaning & Preprocessing <span class="skill-context">Pipeline
+                  Building</span></li>
+              <li><i class='bx bx-search-alt'></i> EDA (Exploratory Analysis) <span class="skill-context">Pattern
+                  Discovery</span></li>
+              <li><i class='bx bx-pie-chart-alt-2'></i> Data Visualization <span
+                  class="skill-context">Storytelling</span></li>
+              <li><i class='bx bxs-report'></i> Power BI <span class="skill-context">Dashboards</span></li>
+            </ul>
+          </div>
+
+          <!-- Programming -->
+          <div class="skill-category">
+            <h3>Programming</h3>
+            <ul class="skill-list">
+              <li><i class='bx bxl-python'></i> Python <span class="skill-context">Data Science & ML</span></li>
+              <li><i class='bx bxl-c-plus-plus'></i> C / C++; arduino<span class="skill-context">Performance &
+                  Embedded</span></li>
+              <li><i class='bx bx-microchip'></i> Verilog <span class="skill-context">Hardware Description</span></li>
+              <li><i class='bx bx-code'></i> HTML / CSS / JavaScript <span class="skill-context">Web Development</span>
+              </li>
+              <li><i class='bx bx-data'></i> SQL <span class="skill-context">Database Queries</span></li>
+            </ul>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-category">
+            <h3>Tools & Platforms</h3>
+            <ul class="skill-list">
+              <li><i class='bx bx-pulse'></i> MATLAB <span class="skill-context">Signal Processing & Simulation</span>
+              </li>
+              <li><i class='bx bxl-git'></i> Git / GitHub <span class="skill-context">Version Control</span></li>
+              <li><i class='bx bx-data'></i> SQLite / MySQL <span class="skill-context">Database Management</span></li>
+              <li><i class='bx bxs-report'></i> Power BI <span class="skill-context">Business Intelligence</span></li>
+              <li><i class='bx bx-windows'></i> MS Office Suite <span class="skill-context">Productivity Tools</span>
+              </li>
+              <li><i class='bx bx-robot'></i> ROS (Robot Operating System) <span class="skill-context">Autonomous
+                  Systems</span></li>
+            </ul>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <ul class="skill-list">
+              <li><i class='bx bx-sitemap'></i> Systems Thinking <span class="skill-context">Holistic Problem
+                  Solving</span></li>
+              <li><i class='bx bx-group'></i> Cross-Functional Collaboration <span class="skill-context">Team
+                  Integration</span></li>
+              <li><i class='bx bx-bulb'></i> Analytical Problem Solving <span class="skill-context">Root Cause
+                  Analysis</span></li>
+              <li><i class='bx bx-book-content'></i> Technical Communication <span class="skill-context">Documentation &
+                  Presentation</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <h2 class="section-title">Timeline</h2>
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 - Present</span>
+              <h3>B.E.Electrical Engineering(vlsi design)</h3>
+              <h4 class="timeline-org">J.N.N.INSTITUTE OF ENGINEERING</h4>
+              <p>Specialized in VLSI Design and Embedded Systems.
+                GPA: 8.11.</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2025 - 2026</span>
+              <h3>Credit linked course in AIML</h3>
+              <h4 class="timeline-org">Indian Institute of Technology GUWATHI</h4>
+              <p>Focused in ML Models,SQL,DATA processing,Data Manipulation<br>
+                GPA: 9.0/10.</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2025-present</span>
+              <h3>B.Sc Data Science</h3>
+              <h4 class="timeline-org">Indian Institute of Technology Madras</h4>
+              <p>persuing for getting a strong foundation in roles covering Statistics, data visualization, and Big
+                Data.
+                <br>
+                CGPA: 5.97
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2025-present</span>
+              <h3>Python developer & web developer </h3>
+              <h4 class="timeline-org">Dark Dragon Calestics</h4>
+              <p>currently working as a python developer to create autonomus navigation system integrated with
+                ros,webdevelopment and NAS via raspberry pi server
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+
+
+    <!-- Learnings -->
+    <section id="learnings" class="section">
+      <div class="container">
+        <h2 class="section-title">Learnings & Insights</h2>
+        <p class="learnings-intro">
+          Python Developer at <strong>Dark Dragon Calestics</strong> — Building a navigation system using
+          web development, cloud computing, and Raspberry Pi server architecture.
+        </p>
+
+        <div class="learnings-grid">
+          <!-- Card 1 -->
+          <div class="learning-card">
+            <h3><i class='bx bx-code-alt'></i> Technical Learnings</h3>
+            <ul class="learning-list">
+              <li>Developed a Python-driven navigation backend with efficient routing logic and APIs.</li>
+              <li>Built RESTful web services for seamless frontend and backend communication.</li>
+              <li>Handled real-time data processing to improve navigation accuracy.</li>
+              <li>Optimized Python applications to run efficiently on Raspberry Pi hardware.</li>
+            </ul>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="learning-card">
+            <h3><i class='bx bx-cloud'></i> Web & Cloud Integration</h3>
+            <ul class="learning-list">
+              <li>Designed responsive web interfaces to visualize navigation data dynamically.</li>
+              <li>Integrated cloud services for data storage, synchronization, and remote access.</li>
+              <li>Balanced edge computing on Raspberry Pi with cloud scalability.</li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="learning-card">
+            <h3><i class='bx bx-sitemap'></i> System Design & Architecture</h3>
+            <ul class="learning-list">
+              <li>Designed a modular architecture separating navigation logic, UI, and hardware.</li>
+              <li>Configured servers, networking, and deployment pipelines.</li>
+              <li>Implemented secure and stable web service exposure.</li>
+            </ul>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="learning-card">
+            <h3><i class='bx bx-wrench'></i> Problem-Solving & Optimization</h3>
+            <ul class="learning-list">
+              <li>Optimized performance under limited hardware resources.</li>
+              <li>Resolved latency, connectivity, and data consistency issues.</li>
+              <li>Tested navigation logic under real-world conditions.</li>
+            </ul>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="learning-card">
+            <h3><i class='bx bx-trending-up'></i> Professional Growth & Impact</h3>
+            <ul class="learning-list">
+              <li>Collaborated with cross-functional teams across software and hardware domains.</li>
+              <li>Built end-to-end solutions from hardware setup to cloud deployment.</li>
+              <li>Gained real-world experience in production-level navigation systems.</li>
+            </ul>
+          </div>
+          <div class="learning-card">
+            <h3><i class='bx bx-trending-up'></i>Languages & Tools</h3>
+
+
+
+            <ul class="learning-list">
+              <li>
+                <p class="subtitle">Languages I communicate in</p>
+                <ul class="inner-list grid-2x2">
+                  <li>English</li>
+                  <li>Telugu</li>
+                  <li>Hindi</li>
+                  <li>Tamil</li>
+                </ul>
+              </li>
+
+              <li>
+                slightly acknowledged in ROS Tools
+                <ul class="inner-list">
+                  <li>Rclpy</li>
+                  <li>RViz</li>
+                  <li>Gazebo</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-container">
+          <!-- Left Column: Info -->
+          <div class="contact-info">
+            <p style="margin-bottom: 0.5rem; color: var(--text-secondary);">
+              Interested in collaboration or discussing systems engineering? Let's connect.
+            </p>
+            <a href="mailto:nyeshwant73@jnn.edu.in" class="contact-card">
+              <div class="contact-icon"><i class='bx bx-envelope'></i></div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <p>nyeshwant73@jnn.edu.in</p>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/" target="_blank" class="contact-card">
+              <div class="contact-icon"><i class='bx bxl-linkedin'></i></div>
+              <div class="contact-details">
+                <h3>LinkedIn</h3>
+                <p>Connect professionally</p>
+              </div>
+            </a>
+
+            <a href="https://github.com/25f3003706-dev" target="_blank" class="contact-card">
+              <div class="contact-icon"><i class='bx bxl-github'></i></div>
+              <div class="contact-details">
+                <h3>GitHub</h3>
+                <p>Explore my repositories</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Right Column: Form -->
+          <div class="contact-form-wrapper">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" required>
+                <label for="name" class="form-label">Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" required>
+                <label for="email" class="form-label">Email</label>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="subject" required>
+                <label for="subject" class="form-label">Subject</label>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="message" rows="4" required style="resize: none;"></textarea>
+                <label for="message" class="form-label">Message</label>
+              </div>
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class='bx bx-send'></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2024 Systems Engineer. All rights reserved.</p>
+      <p class="footer-tagline">Building intelligent systems.</p>
+      <p id="visitor-count" style="margin-top: 10px; font-size: 14px; color: #666;"></p>
+    </div>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+  <script>
+    // Fetch and display visitor count
+    fetch('counter.php')
+      .then(response => response.json())
+      .then(data => {
+        const visitorElement = document.getElementById('visitor-count');
+        visitorElement.textContent = 'Total Visitors: ' + data.visitCount;
+      })
+      .catch(error => console.error('Error loading visitor count:', error));
+  </script>
+</body>
+
+</html>
