@@ -257,3 +257,27 @@ function initContactForm() {
     }, 1500);
   });
 }
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Target all sections and cards for animation
+  const revealElements = document.querySelectorAll('.section, .domain-card, .project-card, .learning-card, .timeline-item');
+
+  // 2. Add the hidden class initially
+  revealElements.forEach(el => el.classList.add('hidden-reveal'));
+
+  // 3. Setup the Observer
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible-reveal');
+        // Once shown, we stop observing this element
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.15, // Trigger when 15% of the element is visible
+    rootMargin: "0px 0px -50px 0px" // Slight offset for better feel
+  });
+
+  // 4. Start observing
+  revealElements.forEach(el => revealObserver.observe(el));
+});
