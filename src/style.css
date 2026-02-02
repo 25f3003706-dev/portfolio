@@ -1343,3 +1343,22 @@ footer {
   z-index: 0;
   pointer-events: none;
 }
+
+/* Animation Base States */
+.hidden-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1), 
+              transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: opacity, transform;
+}
+
+.visible-reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggering for cards (Optional but looks great) */
+.domain-card, .project-card, .learning-card {
+  transition-delay: 0.1s;
+}
