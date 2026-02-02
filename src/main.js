@@ -281,3 +281,31 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. Start observing
   revealElements.forEach(el => revealObserver.observe(el));
 });
+
+    // Theme Toggle Logic
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      body.classList.toggle('light-mode');
+      
+      if(body.classList.contains('light-mode')) {
+        icon.classList.replace('bx-moon', 'bx-sun');
+      } else {
+        icon.classList.replace('bx-sun', 'bx-moon');
+      }
+    }
+
+    // Scroll Reveal Logic
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        }
+      }
+    }
+    window.addEventListener("scroll", reveal);
+    reveal(); // Initial check
