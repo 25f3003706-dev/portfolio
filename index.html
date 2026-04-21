@@ -7,6 +7,19 @@
   <title>Yeshwant G N | Embedded AI & VLSI Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
@@ -27,29 +40,14 @@
   <header>
     <nav>
       <div class="nav-brand">
-        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- VLSI Chip Base -->
-          <rect x="25" y="25" width="50" height="50" rx="4" stroke=var(--clr-on-surface) stroke-width="2" />
-          <path d="M40 25V20M60 25V20M40 75V80M60 75V80M25 40H20M25 60H20M75 40H80M75 60H80"
-            stroke=var(--clr-on-surface) stroke-width="2" stroke-linecap="round" />
-
-          <!-- Neural Network / Data Science Connections -->
-          <circle cx="50" cy="50" r="4" fill="#38bdf8" />
-          <circle cx="38" cy="40" r="3" stroke="#38bdf8" stroke-width="1.5" />
-          <circle cx="38" cy="60" r="3" stroke="#38bdf8" stroke-width="1.5" />
-          <circle cx="62" cy="40" r="3" stroke="#38bdf8" stroke-width="1.5" />
-          <circle cx="62" cy="60" r="3" stroke="#38bdf8" stroke-width="1.5" />
-
-          <!-- Synaptic Traces -->
-          <path d="M41 40H47M53 50H59M41 60H47M59 40L53 47M59 60L53 53" stroke="#38bdf8" stroke-width="1.5"
-            stroke-linecap="round" />
-        </svg>
+        <span class="material-symbols-outlined text-emerald-500 text-8xl">architecture</span>
         <span>Yeshwant</span>
       </div>
       <div class="nav-links">
         <a class="active" href="#hero">Home</a>
         <a href="#about">About</a>
         <a href="#academic">Academic</a>
+        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a class="nav-cta" href="#contact">Let's Talk</a>
@@ -76,7 +74,7 @@
           </p>
           <div class="hero-btns">
             <a href="#projects" class="btn-primary">Explore My Work</a>
-            <a href="#about" class="btn-secondary">My Story</a>
+            <a href="/assets/resume (1).pdf" class="btn-secondary">MY CV</a>
           </div>
         </div>
 
@@ -85,7 +83,8 @@
           <div class="hero-blob-right"></div>
           <div class="hero-blob-left"></div>
           <div class="profile-pill">
-            <img src="assest/photos/photo.jpeg" alt="Yeshwant G N - Embedded AI & VLSI Engineer">
+            <img src="assets/photos/Gemini_Generated_Image_3duu493duu493duu.png"
+              alt="Yeshwant G N - Embedded AI & VLSI Engineer">
           </div>
           <div class="hero-badge-float">
             <span class="material-symbols-outlined">school</span>
@@ -115,7 +114,7 @@
               </div>
               <div class="hero-edu-year">
                 <span class="material-symbols-outlined" style="font-size:1rem;">school</span>
-                2024 — 20231
+                2024 — 2028
               </div>
             </div>
           </div>
@@ -491,9 +490,9 @@
         <div class="projects-grid">
 
           <div class="project-card wide animate-on-scroll">
-            <img alt="Silicon Architecture" src="assest/photos/data-analysis-skills.jpeg" />
+            <img alt="Silicon Architecture" src="assets/photos/data-analysis-skills.jpeg" />
             <div class="project-overlay">
-              <span class="project-tag">loan Approval</span>
+              <span class="project-tag">Loan Approval</span>
               <h3>Loan Approval System</h3>
               <p>A machine learning-based system for automating the loan approval process.</p>
               <button class="btn-view" onclick="window.location.href='https://github.com/25f3003706-dev/PROJECT'">View
@@ -502,7 +501,7 @@
           </div>
 
           <div class="project-card animate-on-scroll" style="animation-delay:100ms">
-            <img alt="Data Flow" src="assest/photos/image.webp" />
+            <img alt="Data Flow" src="assets/photos/image.webp" />
             <div class="project-overlay">
               <h3>Handwritten Digit Recognition </h3>
               <p class="sm">A deep learning model for recognizing handwritten digits in real-time applications using
@@ -513,20 +512,20 @@
           </div>
 
           <div class="project-card tall animate-on-scroll" style="animation-delay:200ms">
-            <img alt="Embedded System" src="assest/photos/data-manage.jpg" />
+            <img alt="Embedded System" src="assets/photos/data-manage.jpg" />
             <div class="project-overlay">
-              <h3>power-bi projects</h3>
-              <p class="sm">certain project in data analysis and powerbi usage.</p>
+              <h3>Power BI Projects</h3>
+              <p class="sm">Comprehensive data analysis and visualization using Power BI.</p>
               <button class="btn-view" onclick="window.location.href='https://github.com/25f3003706-dev/PROJECT'">View
                 Details</button>
             </div>
           </div>
 
           <div class="project-card wide animate-on-scroll" style="animation-delay:300ms;height:25rem">
-            <img alt="Algorithm visualization" src="assest/photos/1655730077214.jpeg" />
+            <img alt="Algorithm visualization" src="assets/photos/1655730077214.jpeg" />
             <div class="project-overlay">
               <h3>Web Development</h3>
-              <p>A full-stack project Specializing in for my one of the client and my startup company</p>
+              <p>Full-stack development for startup partners and corporate clients.</p>
               <button class="btn-view"
                 onclick="window.location.href='https://dark-dragon-caelestics-bg8m.vercel.app/'">View
                 Details</button>
@@ -625,12 +624,14 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="name">Full Name</label>
-                  <input type="text" name="name" id="name" placeholder="Your Name" required title="Please enter your name">
+                  <input type="text" name="name" id="name" placeholder="Your Name" required
+                    title="Please enter your name">
                   <span class="form-line"></span>
                 </div>
                 <div class="form-group">
                   <label for="email">Email Address</label>
-                  <input type="email" name="email" id="email" placeholder="you@example.com" required title="Please enter a valid email">
+                  <input type="email" name="email" id="email" placeholder="you@example.com" required
+                    title="Please enter a valid email">
                   <span class="form-line"></span>
                 </div>
               </div>
@@ -641,14 +642,17 @@
               </div>
               <div class="form-group">
                 <label for="message">Your Message</label>
-                <textarea name="message" id="message" rows="4" placeholder="Briefly describe what you'd like to discuss..."></textarea>
+                <textarea name="message" id="message" rows="4"
+                  placeholder="Briefly describe what you'd like to discuss..."></textarea>
                 <span class="form-line"></span>
               </div>
               <button type="submit" class="btn-submit" id="submitBtn">
                 <span class="btn-text">Send Signal</span>
                 <span class="material-symbols-outlined">send</span>
               </button>
-              <div id="formStatus" style="margin-top: 1.5rem; font-size: 0.875rem; display: none; text-align: center; font-weight: 700; padding: 1rem; border-radius: 12px;"></div>
+              <div id="formStatus"
+                style="margin-top: 1.5rem; font-size: 0.875rem; display: none; text-align: center; font-weight: 700; padding: 1rem; border-radius: 12px;">
+              </div>
             </form>
 
           </div>
@@ -688,7 +692,7 @@
       <span class="material-symbols-outlined">code</span>
     </a>
     <a href="#contact">
-       <span class="material-symbols-outlined">mail</span>
+      <span class="material-symbols-outlined">mail</span>
     </a>
   </nav>
   <script src="js/main.js"></script>
