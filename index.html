@@ -7,27 +7,14 @@
   <title>Yeshwant G N | Embedded AI & VLSI Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Mono:wght@400;500&display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" />
@@ -74,8 +61,19 @@
           </p>
           <div class="hero-btns">
             <a href="#projects" class="btn-primary">Explore My Work</a>
-            <a href="/assets/resume (1).pdf" class="btn-secondary">MY CV</a>
+            <a href="/assets/resume (1).pdf" class="btn-secondary">Download CV</a>
           </div>
+          <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/g-n-yeshwant" target="_blank" class="hero-social-link">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/25f3003706-dev" target="_blank" class="hero-social-link">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="mailto:gnyeshwant7576@gmail.com" class="hero-social-link">
+            <i class="fa-regular fa-envelope"></i> Email
+          </a>
+        </div>
         </div>
 
         <!-- Center -->
@@ -96,29 +94,34 @@
         </div>
 
         <!-- Right -->
-        <div class="hero-right reveal-right">
-          <div class="hero-edu-card">
-            <span class="hero-edu-label">Triple Degree Program</span>
-            <div class="hero-edu-list">
-              <div>
-                <h4>Data Science</h4>
-                <p>Indian Institute of Technology Madras</p>
-              </div>
-              <div>
-                <h4>Artificial Intelligence &amp; ML</h4>
-                <p>Indian Institute of Technology Guwahati</p>
-              </div>
-              <div>
-                <h4>Electrical Engineering (VLSI Design)</h4>
-                <p>J.N.N Institute of Engineering</p>
-              </div>
-              <div class="hero-edu-year">
-                <span class="material-symbols-outlined" style="font-size:1rem;">school</span>
-                2024 — 2028
-              </div>
-            </div>
+         <div class="hero-right reveal-right">
+        <div class="edu-card">
+          <span class="edu-card-label">Triple Degree Program</span>
+          <div class="edu-item">
+            <div class="edu-item-type">B.Sc — Data Science</div>
+            <h4>IIT Madras</h4>
+            <p>May 2025 – Mar 2029</p>
+            <span class="edu-gpa">GPA: 5.97</span>
+          </div>
+          <div class="edu-item">
+            <div class="edu-item-type">Credit-Linked — AI/ML</div>
+            <h4>IIT Guwahati</h4>
+            <p>Apr 2025 – May 2026</p>
+            <span class="edu-gpa">GPA: 8.13/10</span>
+          </div>
+          <div class="edu-item">
+            <div class="edu-item-type">B.E — VLSI Design</div>
+            <h4>J.N.N Institute of Engineering</h4>
+            <p>Jan 2024 – June 2028</p>
+            <span class="edu-gpa">GPA: 8.11</span>
+          </div>
+          <div class="edu-footer">
+            <span class="material-symbols-outlined" style="font-size:1rem;color:var(--clr-primary);">schedule</span>
+            2024 — 2029
           </div>
         </div>
+      </div>
+
 
       </div>
     </section>
@@ -328,101 +331,70 @@
         </div>
 
         <!-- Three discipline columns -->
-        <div class="reveal"
-          style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));border:1px solid var(--clr-outline-variant);border-radius:1.25rem;overflow:hidden;margin-bottom:1rem;">
-
+        <div class="reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:2.5rem;margin-bottom:1rem;">
+ 
           <!-- VLSI -->
-          <div class="disc-col"
-            style="background:#fff;padding:1.75rem 1.5rem;border-right:1px solid var(--clr-outline-variant);">
+          <div style="background:#fff;padding:1.75rem 1.5rem;border-radius:1.25rem;border:1px solid #bccbbf;transition:transform 0.35s cubic-bezier(0.34,1.2,0.64,1),box-shadow 0.35s ease;" onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 20px 48px rgba(0,108,73,0.12)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
             <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.75rem;">
-              <div
-                style="width:34px;height:34px;border-radius:8px;background:#E1F5EE;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <div style="width:34px;height:34px;border-radius:8px;background:#E1F5EE;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
                 <span class="material-symbols-outlined" style="font-size:17px;color:#0F6E56;">memory</span>
               </div>
-              <span style="font-weight:700;font-size:0.95rem;color:var(--clr-on-surface);">VLSI Design</span>
+              <span style="font-weight:700;font-size:0.95rem;color:#0f1c17;">VLSI Design</span>
             </div>
-            <p style="font-size:0.875rem;color:var(--clr-on-surface-variant);line-height:1.65;margin-bottom:1rem;">
+            <p style="font-size:0.875rem;color:#3a4a41;line-height:1.65;margin-bottom:1rem;">
               Designing integrated circuits from RTL to physical layout — the physical foundation of all computation.
             </p>
             <div style="display:flex;flex-wrap:wrap;gap:5px;">
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#E1F5EE;color:#085041;">Verilog
-                / VHDL</span>
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#E1F5EE;color:#085041;">FPGA</span>
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#E1F5EE;color:#085041;">ASIC
-                flow</span>
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#E1F5EE;color:#085041;">Timing
-                analysis</span>
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#E1F5EE;color:#085041;">EDA
-                tools</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#E1F5EE;color:#085041;">Verilog / VHDL</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#E1F5EE;color:#085041;">FPGA</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#E1F5EE;color:#085041;">ASIC flow</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#E1F5EE;color:#085041;">Timing analysis</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#E1F5EE;color:#085041;">EDA tools</span>
             </div>
           </div>
-
+ 
           <!-- AI/ML -->
-          <div class="disc-col"
-            style="background:#fff;padding:1.75rem 1.5rem;border-right:1px solid var(--clr-outline-variant);">
+          <div style="background:#fff;padding:1.75rem 1.5rem;border-radius:1.25rem;border:1px solid #bccbbf;transition:transform 0.35s cubic-bezier(0.34,1.2,0.64,1),box-shadow 0.35s ease;" onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 20px 48px rgba(83,74,183,0.1)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
             <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.75rem;">
-              <div
-                style="width:34px;height:34px;border-radius:8px;background:#EEEDFE;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <div style="width:34px;height:34px;border-radius:8px;background:#EEEDFE;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
                 <span class="material-symbols-outlined" style="font-size:17px;color:#534AB7;">hub</span>
               </div>
-              <span style="font-weight:700;font-size:0.95rem;color:var(--clr-on-surface);">AI & Machine Learning</span>
+              <span style="font-weight:700;font-size:0.95rem;color:#0f1c17;">AI &amp; Machine Learning</span>
             </div>
-            <p style="font-size:0.875rem;color:var(--clr-on-surface-variant);line-height:1.65;margin-bottom:1rem;">
-              Building neural architectures that extract meaning from data — the intelligence layer hardware must be
-              designed to accelerate.</p>
+            <p style="font-size:0.875rem;color:#3a4a41;line-height:1.65;margin-bottom:1rem;">
+              Building neural architectures that extract meaning from data — the intelligence layer hardware must be designed to accelerate.
+            </p>
             <div style="display:flex;flex-wrap:wrap;gap:5px;">
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#EEEDFE;color:#3C3489;">PyTorch
-                / TF</span>
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#EEEDFE;color:#3C3489;">LLMs
-                & NLP</span>
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#EEEDFE;color:#3C3489;">Edge
-                inference</span>
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#EEEDFE;color:#3C3489;">Model
-                compression</span>
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#EEEDFE;color:#3C3489;">RL</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#EEEDFE;color:#3C3489;">PyTorch / TF</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#EEEDFE;color:#3C3489;">LLMs &amp; NLP</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#EEEDFE;color:#3C3489;">Edge inference</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#EEEDFE;color:#3C3489;">Model compression</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#EEEDFE;color:#3C3489;">RL</span>
             </div>
           </div>
-
+ 
           <!-- Data Science -->
-          <div class="disc-col" style="background:#fff;padding:1.75rem 1.5rem;">
+          <div style="background:#fff;padding:1.75rem 1.5rem;border-radius:1.25rem;border:1px solid #bccbbf;transition:transform 0.35s cubic-bezier(0.34,1.2,0.64,1),box-shadow 0.35s ease;" onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 20px 48px rgba(133,79,11,0.1)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
             <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.75rem;">
-              <div
-                style="width:34px;height:34px;border-radius:8px;background:#FAEEDA;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <div style="width:34px;height:34px;border-radius:8px;background:#FAEEDA;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
                 <span class="material-symbols-outlined" style="font-size:17px;color:#854F0B;">monitoring</span>
               </div>
-              <span style="font-weight:700;font-size:0.95rem;color:var(--clr-on-surface);">Data Science</span>
+              <span style="font-weight:700;font-size:0.95rem;color:#0f1c17;">Data Science</span>
             </div>
-            <p style="font-size:0.875rem;color:var(--clr-on-surface-variant);line-height:1.65;margin-bottom:1rem;">
-              Extracting patterns and building pipelines from complex datasets — the signal layer that trains and
-              evaluates intelligence.</p>
+            <p style="font-size:0.875rem;color:#3a4a41;line-height:1.65;margin-bottom:1rem;">
+              Extracting patterns and building pipelines from complex datasets — the signal layer that trains and evaluates intelligence.
+            </p>
             <div style="display:flex;flex-wrap:wrap;gap:5px;">
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#FAEEDA;color:#633806;">Pandas
-                / SQL</span>
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#FAEEDA;color:#633806;">Power
-                BI</span>
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#FAEEDA;color:#633806;">Feature
-                engineering</span>
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#FAEEDA;color:#633806;">MLOps</span>
-              <span class="disc-pill"
-                style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#FAEEDA;color:#633806;">Statistics</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#FAEEDA;color:#633806;">Pandas / SQL</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#FAEEDA;color:#633806;">Power BI</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#FAEEDA;color:#633806;">Feature engineering</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#FAEEDA;color:#633806;">MLOps</span>
+              <span style="font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#FAEEDA;color:#633806;">Statistics</span>
             </div>
           </div>
+ 
         </div>
-
+ 
 
 
         <!-- Stats divider -->
@@ -695,7 +667,160 @@
       <span class="material-symbols-outlined">mail</span>
     </a>
   </nav>
-  <script src="js/main.js"></script>
+  <script >
+    
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* ── 1. Universal scroll-reveal observer ── */
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('show');
+      revealObs.unobserve(entry.target);
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll(
+    '.reveal, .reveal-left, .reveal-scale, .reveal-right, .animate-on-scroll, .section-heading-line'
+  ).forEach(el => revealObs.observe(el));
+
+  /* ── 2. Divider line animation ── */
+  const divObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('show');
+      divObs.unobserve(entry.target);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.divider-line').forEach(el => divObs.observe(el));
+
+  /* ── 3. Stagger children observer ── */
+  const staggerObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('show');
+      const children = entry.target.children;
+      Array.from(children).forEach((child, i) => {
+        child.style.transitionDelay = `${i * 80}ms`;
+      });
+      staggerObs.unobserve(entry.target);
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.stagger-children').forEach(el => staggerObs.observe(el));
+
+  /* ── 4. Animated counter for stat numbers ── */
+  const counterObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseInt(el.dataset.target, 10);
+      const duration = 1200;
+      const start = performance.now();
+      const startVal = target > 100 ? target - 80 : 0;
+
+      function tick(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round(startVal + (target - startVal) * eased);
+        el.textContent = current;
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+
+      requestAnimationFrame(tick);
+      counterObs.unobserve(el);
+    });
+  }, { threshold: 0.6 });
+  document.querySelectorAll('.stat-num[data-target]').forEach(el => counterObs.observe(el));
+
+  /* ── 5. Skill tiles pop-in stagger ── */
+  const bentoObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const tiles = entry.target.querySelectorAll('.skill-tile');
+      tiles.forEach((tile, i) => {
+        tile.style.opacity = '0';
+        tile.style.transform = 'translateY(20px) scale(0.97)';
+        tile.style.transition = `opacity 0.5s ease ${i * 70}ms, transform 0.5s cubic-bezier(0.34,1.3,0.64,1) ${i * 70}ms`;
+        requestAnimationFrame(() => {
+          tile.style.opacity = '1';
+          tile.style.transform = 'translateY(0) scale(1)';
+        });
+      });
+      bentoObs.unobserve(entry.target);
+    });
+  }, { threshold: 0.1 });
+  const skillsSection = document.querySelector('#skills .skills-bento');
+  if (skillsSection) bentoObs.observe(skillsSection);
+
+  /* ── 6. Section entrance — add reveal classes automatically ── */
+  const sections = ['#about', '#academic', '#skills', '#domain', '#projects', '#experience', '#contact'];
+  sections.forEach(sel => {
+    const sec = document.querySelector(sel);
+    if (sec && !sec.classList.contains('reveal') && !sec.classList.contains('animate-on-scroll')) {
+      sec.classList.add('reveal');
+      revealObs.observe(sec);
+    }
+  });
+
+  /* ── 7. Contact Form logic (Google Sheets) ── */
+  const contactForm = document.getElementById('contactForm');
+  const formStatus = document.getElementById('formStatus');
+  const submitBtn = document.getElementById('submitBtn');
+  const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+
+  // Placeholder for your API Key/URL
+  // Replace with your Google Apps Script Web App URL
+  const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (SCRIPT_URL === 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
+        alert('Please configure your SCRIPT_URL in js/main.js first.');
+        return;
+      }
+
+      // Show loading state
+      submitBtn.disabled = true;
+      if (btnText) btnText.textContent = 'Sending...';
+      formStatus.style.display = 'none';
+
+      const formData = new FormData(contactForm);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch(SCRIPT_URL, {
+          method: 'POST',
+          body: JSON.stringify(data),
+        });
+
+        const result = await response.json();
+
+        if (result.result === 'success') {
+          formStatus.textContent = 'Message sent successfully! I will get back to you soon.';
+          formStatus.style.background = 'rgba(16, 185, 129, 0.1)';
+          formStatus.style.color = '#059669';
+          contactForm.reset();
+        } else {
+          throw new Error(result.error || 'Unknown error');
+        }
+      } catch (error) {
+        console.error('Submission error:', error);
+        formStatus.textContent = 'Oops! Something went wrong. Please try again or email me directly.';
+        formStatus.style.background = 'rgba(186, 26, 26, 0.1)';
+        formStatus.style.color = '#ba1a1a';
+      } finally {
+        formStatus.style.display = 'block';
+        submitBtn.disabled = false;
+        if (btnText) btnText.textContent = 'Send Signal';
+      }
+    });
+  }
+
+});
+  </script>
 </body>
 
 </html>
